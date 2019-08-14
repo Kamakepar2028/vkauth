@@ -3,7 +3,7 @@
 $app_id = id приложеия;
 $secret_key = 'ваш секретный ключ';
 $code = $_GET['code'];
-$redirect = 'https://mol-programmist.ru/socials/vk/index.php';
+$redirect = 'https://github.com/Kamakepar2028/vkauth/blob/master/index.php';
 
 
 
@@ -17,12 +17,12 @@ if (isset($_GET['ok'])){
 
 
 //header('Location: https://oauth.vk.com/access_token?client_id='.$app_id.'&client_secret='.$secret_key.'&redirect_uri=https://mol-programmist.ru/socials/vk/index.php&code='.$code);
-//https://oauth.vk.com/authorize?client_id=7023252&display=mobile&redirect_uri=https://mol-programmist.ru/socials/vk/index.php&scope=friends&response_type=code&v=5.95
+//https://oauth.vk.com/authorize?client_id=7023252&display=mobile&redirect_uri=https://github.com/Kamakepar2028/vkauth/blob/master/index.php&scope=friends&response_type=code&v=5.95
 
 if (isset($_GET['code'])) {
 
 
-$token = file_get_contents('https://oauth.vk.com/access_token?client_id='.$app_id.'&client_secret='.$secret_key.'&redirect_uri=https://mol-programmist.ru/socials/vk/index.php&code='.$code);
+$token = file_get_contents('https://oauth.vk.com/access_token?client_id='.$app_id.'&client_secret='.$secret_key.'&redirect_uri=https://github.com/Kamakepar2028/vkauth/blob/master/index.php&code='.$code);
 $token = json_decode($token, true);
 
 
@@ -49,7 +49,7 @@ fclose($fp);
 
 
     
-header("Location: https://mol-programmist.ru/socials/vk/index.php?ok");
+header("Location: https://github.com/Kamakepar2028/vkauth/blob/master/index.php?ok");
     exit;
     
 
