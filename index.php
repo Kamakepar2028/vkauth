@@ -1,7 +1,7 @@
 <?
 
-$app_id = id приложеия;
-$secret_key = 'ваш секретный ключ';
+$app_id = 7096955;
+$secret_key = 'c1czWGqLEgSpe3DP2qdP';
 $code = $_GET['code'];
 $redirect = 'https://github.com/Kamakepar2028/vkauth/blob/master/index.php';
 
